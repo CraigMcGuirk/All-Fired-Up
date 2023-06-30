@@ -1,0 +1,13 @@
+Keep following guide until reaching HTML parts +
+
+Copy paste html files from original repo to this repo +
+
+Implement number of people time + date options in form +
+
+set up urls to reach those files section 6.3 for instructions +
+
+Google dates picker (need html element for this) +
+
+Remove the hello page +
+------------------------------------------------
+

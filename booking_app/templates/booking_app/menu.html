@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Steakhouse located in Vilnius, Lithuania">
+    <meta name="keywords" content="Steakhouse, Bar & grill, drinks, food, restaurant">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'booking_app/css/style.css' %}">
+    <title>All Fired Up!</title>
+</head>
+<body>
+    <header>
+        <a href="/">
+            <h1 id="logo">All Fired Up!</h1>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="/reservations">Book a table</a>
+                </li>
+                <li>
+                    <a href="/menu/index" class="active">Menu</a>
+                </li>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="food-drinks-menu">
+       <img src="assets/images/Todays special (All fired up!).png" alt="Todays special 3 course meal">
+       <img src="assets/images/drinks menu 3.png" alt="Cocktails, wine and beer menu">
+    </section>
+    <footer>
+        <ul class="social-networks">
+            <li>
+                <a href="https://facebook.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://youtube.com" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://instagram.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
+    <!-- Font awesome script-->
+    <script src="https://kit.fontawesome.com/111674b4af.js" crossorigin="anonymous"></script>
+</body>
+</html>

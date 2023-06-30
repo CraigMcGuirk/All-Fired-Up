@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Steakhouse located in Vilnius, Lithuania">
+    <meta name="keywords" content="Steakhouse, Bar & grill, drinks, food, restaurant">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'booking_app/css/style.css' %}">
+    <title>All Fired Up!</title>
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <h1 id="logo">All Fired Up!</h1>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="/reservations" class="active">Book A Table</a>
+                </li>
+                <li>
+                    <a href="/menu">Menu</a>
+                </li>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="form-section">
+        <form method="POST" action="{% url 'reservations' %}" class="signup-form">
+            {% csrf_token %}
+            <h2><i class="fa-solid fa-utensils"></i> Book a table with us!</h2>
+            <label for="fname">First Name</label>
+            <input id="fname" name="first_name" type="text" required>
+
+            <label for="lname">Last Name</label>
+            <input id="lname" name="last_name" type="text" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email_address" required>
+
+            <label for="numpeople">Number of people</label>
+            <input type="numpeople" id="numpeople" name="number_of_people" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <input class="join-button" type="submit" value="Submit">
+        </form>
+    </section>
+    <footer>
+        <ul class="social-networks">
+            <li>
+                <a href="https://facebook.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://youtube.com" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://instagram.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
+    <!-- Font awesome script-->
+    <script src="https://kit.fontawesome.com/111674b4af.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Steakhouse located in Vilnius, Lithuania">
+    <meta name="keywords" content="Steakhouse, Bar & grill, drinks, food, restaurant">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'booking_app/css/style.css' %}">
+    <title>All Fired Up!</title>
+</head>
+<body>
+    <header>
+        <a href="/">
+            <h1 id="logo">All Fired Up!</h1>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="/reservations">Book a table</a>
+                </li>
+                <li>
+                    <a href="/menu">Menu</a>
+                </li>
+                <li>
+                    <a href="/" class="active">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero-outer">
+        <div id="hero-image"></div>
+    </section>
+    <section>
+        <div id="blank-space">
+            <br>
+        </div>
+    </section>
+    <section id="grass">
+        <div>
+            <br>
+            <h2>Our commitment to sourcing beef from grass-fed cattle ensures that each steak is tender, flavorful, and packed with natural goodness.
+
+
+                At our steakhouse, you'll experience the unparalleled taste and tenderness of grass-fed beef, which is known for its richer flavor profile and superior nutritional value. Our carefully selected grass-fed beef comes from trusted local farmers who prioritize animal welfare and sustainable farming practices.</h2>
+            <br>
+            <h2>
+                Indulge in a truly exceptional dining experience as our skilled chefs skillfully prepare your perfectly cooked grass-fed beef steak to your liking. Each bite showcases the exquisite taste, tenderness, and juiciness that only grass-fed beef can offer.
+
+
+In addition to our delectable steaks, our menu features a range of enticing appetizers, flavorful sides, and expertly crafted sauces, all designed to complement and enhance the natural flavors of our grass-fed beef. Our friendly and knowledgeable staff are always on hand to guide you through your dining experience and provide recommendations to elevate your meal.
+            </h2>
+            <br>
+            <h2>
+                Whether you are a steak aficionado or simply appreciate high-quality, sustainably-sourced ingredients, our grass-fed beef steakhouse offers a culinary journey that celebrates the finest flavors nature has to offer. Join us in savoring the unparalleled taste and ethical benefits of grass-fed beef at our steakhouse, where every steak tells a story of quality, sustainability, and pure gastronomic delight.
+            </h2>
+        
+        </div>
+    </section>
+    <footer>
+        <ul class="social-networks">
+            <li>
+                <a href="https://facebook.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://youtube.com" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://instagram.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- table booking script-->
+    
+  <script>
+    const form = document.querySelector('form');
+    const successMessage = document.querySelector('.success-message');
+    
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      // Your code logic for submitting the form and handling the booking goes here
+      // You can use AJAX, fetch, or any server-side scripting language to handle the form submission
+    
+      // Once the booking is successful, you can display a success message like this:
+      successMessage.textContent = 'Table booked successfully!';
+      // You can also redirect the user to a confirmation page or perform any other actions you need.
+    });
+  </script>
+
+    <!-- Font awesome script-->
+    <script src="https://kit.fontawesome.com/111674b4af.js" crossorigin="anonymous"></script>
+</body>
+</html>
