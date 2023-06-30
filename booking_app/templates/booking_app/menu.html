@@ -29,8 +29,12 @@
         </nav>
     </header>
     <section id="food-drinks-menu">
-       <img src="assets/images/Todays special (All fired up!).png" alt="Todays special 3 course meal">
-       <img src="assets/images/drinks menu 3.png" alt="Cocktails, wine and beer menu">
+        <div>
+            {% load static %}
+            <img src="{% static 'booking_app/images/Drinks Menu (All fired up!).png' %}" alt="First Image">
+       
+            <img src="{% static 'booking_app/images/Todays special (All fired up!).png' %}" alt="Second Image"> 
+        </div>
     </section>
     <footer>
         <ul class="social-networks">

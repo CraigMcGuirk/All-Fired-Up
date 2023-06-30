@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='ReservationTable',
+            name='reservationtable',
             fields=[
                 ('table_number', models.IntegerField(primary_key=True, serialize=False)),
                 ('number_of_seats', models.IntegerField()),
