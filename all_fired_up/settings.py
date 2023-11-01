@@ -31,7 +31,7 @@ DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['8000-craigmcguirk-allfiredup-l8koc390bte.ws-eu101.gitpod.io']
+ALLOWED_HOSTS = ['All-Fired-Up.herokuapp.com, 'localhost']
 
 
 # Application definition
