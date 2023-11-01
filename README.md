@@ -1,39 +1,41 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Restaurant Booking Web App Project README
 
-Welcome,
+Welcome to the AllFiredUp Booking Web App project! This project is a small-scale web application designed to help users make table reservations at a restaurant. Below, you'll find information on the project, its features, and how to get started.
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Project Overview
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+This college project aims to create a web application for restaurant table booking. The primary focus is on implementing the core features of the app, allowing users to book tables at their preferred date and time. The project is developed as part of a course to demonstrate web development and software engineering skills.
 
-## Codeanywhere Reminders
+## Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+- **Table Reservation**: Book tables at your preferred date and time.
+- **Real-time Availability**: Check real-time table availability, so users always get the most up-to-date information.
 
-`python3 -m http.server`
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Technologies Used
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- **Frontend**: React, HTML, CSS
+- **Backend**: Python, JSON
+- **Database**: Django
+- **Version Control**: Git and GitHub
 
-`http_server`
+## Usage
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- **Diner Perspective**:
+   - View menu and select a date and time for your reservation.
+   - Make a reservation by providing your contact information.
+   - Receive confirmation and reminders about your reservation.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- **Restaurant Owner Perspective**:
+   - To get an overview of upcoming reservations
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+## License
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+This project is developed for educational purposes and does not have a specific license. Ensure that you comply with the academic guidelines and policies of your institution when using or sharing this project.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Contact
 
----
+If you have any questions or need further information about this project, please contact the project lead, [your-name](craigmcguirk1@gmail.com).
 
-Happy coding!
+Thank you for your interest in my College Restaurant Booking Web App Project! I hope you find it informative and helpful. 🍽️🥂
